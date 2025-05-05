@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://alredhaalmajed:<yourpassword>@cluster0.xumrsmh.mongodb.net/kaddadDB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected. URI Hint:', process.env.MONGO_URI ? 'Set' : 'Not Set or Found!'))
   .catch((err) => console.error('MongoDB connection failed:', err));
 
