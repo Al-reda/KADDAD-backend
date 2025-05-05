@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
 "scripts": {
-  "start": "bun run react-scripts start", 
-  "build": "bun run react-scripts build", 
-  "test": "bun run react-scripts test", 
-  "eject": "bun run react-scripts eject",
-  "postinstall": "bun install"
+  "start": "node server.js", 
+  "build": "npm run build",   
+  "test": "echo \"Error: no test specified\" && exit 1"
 },
   "keywords": [],
   "author": "",
